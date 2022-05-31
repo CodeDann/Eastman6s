@@ -1,0 +1,16 @@
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# pycache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# environments
+.venv
+venv/
+
