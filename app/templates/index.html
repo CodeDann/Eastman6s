@@ -2,7 +2,17 @@
 
 {% block content %}
 <!-- Title -->
-<div class="container">
-    <h1 class="display-3"> HOMEPAGE CONTENT</h1>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome to the Eastman6s Decision Tree</h1>
+        <p class="lead">Would you like to start the decision tree or see more information</p>
+        <hr class="jumbotron-divider">
+        <form method="post">
+              <div class="btn-group btn-group-lg container d-flex justify-content-center" role="group">
+                <button type="submit" class="btn btn-outline-success groupbutton" name="start">Start Decision Tree</button>
+                <button type="submit" class="btn btn-outline-primary groupbutton" name="info">More Info</button>
+              </div>
+        </form>
+    </div>
 </div>
 {% endblock %}

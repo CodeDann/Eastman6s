@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Question 3: Whats the classification of the 6th? </h1>
+      <hr class="jumbotron-divider">
+      <form method="post">
+        <div class="btn-group btn-group-lg container d-flex justify-content-center" role="group">
+          <button type="submit" class="btn btn-outline-success groupbutton" name="upper">Upper</button>
+          <button type="submit" class="btn btn-outline-primary groupbutton" name="both">Both</button>
+            <button type="submit" class="btn btn-outline-danger groupbutton" name="lower">Lower</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+{% endblock %}

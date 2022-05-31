@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Boostrap stuff -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-      {% if title %}
-          <title>{{ title }}</title>
-          {% else %}
-          <title> No title specified</title>
-      {% endif %}
+    <!-- Boostrap stuff -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--      link to custom css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title> No title specified</title>
+    {% endif %}
   </head>
 
 
   <body>
     <!-- Classic boostrap navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-light bg-success">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="/"> HOMEPAGE <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a></li>
         </ul>
       </div>
     </nav>
