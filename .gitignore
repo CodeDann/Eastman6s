@@ -1,2 +1,3 @@
-my_env/*
-pyvenv.conf
+venv/*
+__pycache__/*
+*/__pycache__/*
