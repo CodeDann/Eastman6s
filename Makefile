@@ -8,5 +8,5 @@ venv/bin/activate: requirements.txt
 run: venv/bin/activate
 	@export FLASK_APP=app.py; 
 	@export FLASK_ENV=development; 
-	@flask run --eager-loading --host=0.0.0.0 --port=5001; 
+	@flask run --host=0.0.0.0 --port=5001; 
 
